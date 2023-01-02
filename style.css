@@ -4,6 +4,61 @@ body::before {
     height: 60px;
 }
 
+* CONTACT-----BUTTON */
+.contact__header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.header__btn {
+    border-radius: 80px;
+    background: #29292b;
+    
+    
+}
+.header__btn:hover {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    color: #000e17;
+    transform: translateY(-1rem);
+}
+.contact__btn i {
+    font-size: 3.5rem;
+    position: absolute;
+    right: 14rem;
+    
+}
+.header__btn p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 16rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation: spinText 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+.header__btn p span {
+    position: absolute;
+    transform-origin: 9px 7.7rem ;
+}
+
+@keyframes spinText {
+    /* from {
+        transform: 0deg;
+    } */
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+
 @media(min-width: 768px)  {
     .news-input {
     width: 50%;
